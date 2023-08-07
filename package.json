@@ -4,7 +4,8 @@
   "scripts": {
     "dev": "yarn dev:backend & yarn dev:frontend",
     "dev:frontend": "yarn workspace client dev",
-    "dev:backend": "cargo watch -x run --why"
+    "dev:backend": "cargo watch -x run --why",
+    "build:frontend": "yarn workspace client build"
   },
   "workspaces": {
     "packages": [
