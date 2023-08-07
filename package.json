@@ -1,0 +1,14 @@
+{
+  "name": "cloud-factory-fullstack",
+  "packageManager": "yarn@3.6.1",
+  "scripts": {
+    "dev": "yarn dev:backend & yarn dev:frontend",
+    "dev:frontend": "yarn workspace client dev",
+    "dev:backend": "cargo watch -x run --why"
+  },
+  "workspaces": {
+    "packages": [
+      "./client"
+    ]
+  }
+}
